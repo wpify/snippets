@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ruleset name="WpifyCore">
+  <description>WPify Core</description>
+  <exclude-pattern>/vendor/*</exclude-pattern>
+  <rule ref="vendor/wpify/core/phpcs.xml" />
+</ruleset>
