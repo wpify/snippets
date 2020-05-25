@@ -4,7 +4,7 @@ namespace Wpify\Tools;
 
 use Wpify\Core\AbstractComponent;
 
-class DisableEmojisFunctionality extends AbstractComponent
+class DisableEmojis extends AbstractComponent
 {
   public function setup()
   {

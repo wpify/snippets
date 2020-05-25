@@ -5,7 +5,7 @@ namespace Wpify\Tools;
 use PHPMailer;
 use Wpify\Core\AbstractComponent;
 
-class CustomSMTPFunctionality extends AbstractComponent
+class CustomSMTP extends AbstractComponent
 {
   public function setup()
   {

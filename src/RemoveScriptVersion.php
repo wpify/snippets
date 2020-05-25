@@ -4,7 +4,7 @@ namespace Wpify\Tools;
 
 use Wpify\Core\AbstractComponent;
 
-class RemoveScriptVersionFunctionality extends AbstractComponent
+class RemoveScriptVersion extends AbstractComponent
 {
   public function setup()
   {

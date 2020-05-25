@@ -4,7 +4,7 @@ namespace Wpify\Tools;
 
 use Wpify\Core\AbstractComponent;
 
-class DisableEmbedsFunctionality extends AbstractComponent
+class DisableEmbeds extends AbstractComponent
 {
   public function setup()
   {

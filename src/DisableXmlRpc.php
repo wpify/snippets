@@ -4,7 +4,7 @@ namespace Wpify\Tools;
 
 use Wpify\Core\AbstractComponent;
 
-class DisableXmlRpcFunctionality extends AbstractComponent
+class DisableXmlRpc extends AbstractComponent
 {
   public function setup()
   {

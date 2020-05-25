@@ -4,7 +4,7 @@ namespace Wpify\Tools;
 
 use Wpify\Core\AbstractComponent;
 
-class DeferScriptsFunctionality extends AbstractComponent
+class DeferScripts extends AbstractComponent
 {
   public function setup()
   {

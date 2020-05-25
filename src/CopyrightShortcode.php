@@ -4,7 +4,7 @@ namespace Wpify\Tools;
 
 use Wpify\Core\AbstractComponent;
 
-class CopyrightShortcodeFunctionality extends AbstractComponent
+class CopyrightShortcode extends AbstractComponent
 {
   public function setup()
   {
