@@ -2,10 +2,7 @@
   "name": "wpify/tools",
   "type": "library",
   "require": {
-    "wpify/core": "^1.1"
-  },
-  "require-dev": {
-    "php-stubs/wordpress-stubs": "^5.4"
+    "wpify/core": "^1.1.20"
   },
   "license": "GPL-3.0-or-later",
   "authors": [
