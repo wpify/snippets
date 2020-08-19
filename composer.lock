@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf01e78aaabed52690af14dd66c0b912",
+    "content-hash": "ed70db7a5dc0434e2c5af7d995c36f5b",
     "packages": [
         {
             "name": "composepress/dice",
@@ -165,21 +165,21 @@
         },
         {
             "name": "wpify/core",
-            "version": "v1.1.20",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/wpify/wpify-core.git",
-                "reference": "13eb2dd47d5455d643ed5ec627062e27ff47906d"
+                "reference": "74302ed1dab4c8911661da255e423d057c0851a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=13eb2dd47d5455d643ed5ec627062e27ff47906d",
-                "reference": "13eb2dd47d5455d643ed5ec627062e27ff47906d",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=74302ed1dab4c8911661da255e423d057c0851a2",
+                "reference": "74302ed1dab4c8911661da255e423d057c0851a2",
                 "shasum": ""
             },
             "require": {
                 "doctrine/collections": "^1.6",
-                "php": ">=7.3.0",
+                "php": ">=7.4",
                 "wpify/composepress": "^0.11.0"
             },
             "type": "library",
@@ -192,7 +192,7 @@
             "license": [
                 "GPL-3.0-or-later"
             ],
-            "time": "2020-08-17T11:32:28+00:00"
+            "time": "2020-08-19T20:08:38+00:00"
         }
     ],
     "packages-dev": [],

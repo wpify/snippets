@@ -2,7 +2,7 @@
   "name": "wpify/tools",
   "type": "library",
   "require": {
-    "wpify/core": "^1.1.20"
+    "wpify/core": "^1.2.0"
   },
   "license": "GPL-3.0-or-later",
   "authors": [
