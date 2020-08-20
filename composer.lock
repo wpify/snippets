@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed70db7a5dc0434e2c5af7d995c36f5b",
+    "content-hash": "d93e9377921af0540aaf77e6984b2ea4",
     "packages": [
         {
             "name": "composepress/dice",
@@ -165,16 +165,16 @@
         },
         {
             "name": "wpify/core",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/wpify/wpify-core.git",
-                "reference": "74302ed1dab4c8911661da255e423d057c0851a2"
+                "reference": "e183d65aaa623b8a4643e25de921fa58a2afa63b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=74302ed1dab4c8911661da255e423d057c0851a2",
-                "reference": "74302ed1dab4c8911661da255e423d057c0851a2",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=e183d65aaa623b8a4643e25de921fa58a2afa63b",
+                "reference": "e183d65aaa623b8a4643e25de921fa58a2afa63b",
                 "shasum": ""
             },
             "require": {
@@ -192,7 +192,7 @@
             "license": [
                 "GPL-3.0-or-later"
             ],
-            "time": "2020-08-19T20:08:38+00:00"
+            "time": "2020-08-20T09:22:53+00:00"
         }
     ],
     "packages-dev": [],
