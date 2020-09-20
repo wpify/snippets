@@ -2,7 +2,7 @@
 
 namespace Wpify\Tools;
 
-use Wpify\Core\AbstractComponent;
+use Wpify\Core\Abstracts\AbstractComponent;
 
 class RemoveScriptVersion extends AbstractComponent
 {
