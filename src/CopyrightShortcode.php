@@ -2,7 +2,7 @@
 
 namespace Wpify\Tools;
 
-use Wpify\Core\Abstracts\AbstractComponent;
+use Wpify\Core_2_0\Abstracts\AbstractComponent;
 
 class CopyrightShortcode extends AbstractComponent
 {
