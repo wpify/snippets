@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "433b0de4ce7616ac2e0aa81177801234",
+    "content-hash": "ad6273932dfeed9adee4f35441f408af",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -164,16 +164,16 @@
         },
         {
             "name": "wpify/core",
-            "version": "v1.3.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/wpify/wpify-core.git",
-                "reference": "70c404c61c65a4a12c665f632139567283182952"
+                "reference": "34876e2b7afc9ab99b7c90e63579eabd10c195f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=70c404c61c65a4a12c665f632139567283182952",
-                "reference": "70c404c61c65a4a12c665f632139567283182952",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=34876e2b7afc9ab99b7c90e63579eabd10c195f1",
+                "reference": "34876e2b7afc9ab99b7c90e63579eabd10c195f1",
                 "shasum": ""
             },
             "require": {
@@ -184,14 +184,14 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Wpify\\Core\\": "src\\"
+                    "Wpify\\Core_2_0\\": "src\\"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
-            "time": "2020-09-04T12:15:13+00:00"
+            "time": "2020-10-03T18:25:27+00:00"
         }
     ],
     "packages-dev": [],
