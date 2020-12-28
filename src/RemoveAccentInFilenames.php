@@ -2,7 +2,7 @@
 
 namespace Wpify\Tools;
 
-use Wpify\Core_2_0\Abstracts\AbstractComponent;
+use Wpify\Core_3_0\Abstracts\AbstractComponent;
 
 class RemoveAccentInFilenames extends AbstractComponent
 {
