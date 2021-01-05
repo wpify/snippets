@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9535637d07e077490130f0c59917c7d6",
+    "content-hash": "b0aff023b210c52babee03f266bd8fa4",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -273,16 +273,16 @@
         },
         {
             "name": "wpify/core",
-            "version": "3.0.6",
+            "version": "3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/wpify/wpify-core.git",
-                "reference": "cd12120694aef5520ca9d1fce8ac1e5a46b19691"
+                "reference": "4ddd5623e622fa51be89bbd436b0989668b496b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=cd12120694aef5520ca9d1fce8ac1e5a46b19691",
-                "reference": "cd12120694aef5520ca9d1fce8ac1e5a46b19691",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=4ddd5623e622fa51be89bbd436b0989668b496b4",
+                "reference": "4ddd5623e622fa51be89bbd436b0989668b496b4",
                 "shasum": ""
             },
             "require": {
@@ -293,8 +293,9 @@
                 "php": ">=7.4"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^3.5.8",
-                "wp-coding-standards/wpcs": "^2.3.0"
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3"
             },
             "type": "library",
             "autoload": {
@@ -310,7 +311,7 @@
             "support": {
                 "issues": "https://gitlab.com/api/v4/projects/18728803/issues"
             },
-            "time": "2020-12-27T18:30:24+00:00"
+            "time": "2021-01-05T12:33:47+00:00"
         }
     ],
     "packages-dev": [],
