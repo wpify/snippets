@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0aff023b210c52babee03f266bd8fa4",
+    "content-hash": "161fcb94c526531bc648e2a475c9232b",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -273,16 +273,16 @@
         },
         {
             "name": "wpify/core",
-            "version": "3.0.10",
+            "version": "3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/wpify/wpify-core.git",
-                "reference": "4ddd5623e622fa51be89bbd436b0989668b496b4"
+                "reference": "e7876b3f48b2efa2273a63d661d87d23a815018e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=4ddd5623e622fa51be89bbd436b0989668b496b4",
-                "reference": "4ddd5623e622fa51be89bbd436b0989668b496b4",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fwpify-core/repository/archive.zip?sha=e7876b3f48b2efa2273a63d661d87d23a815018e",
+                "reference": "e7876b3f48b2efa2273a63d661d87d23a815018e",
                 "shasum": ""
             },
             "require": {
@@ -311,7 +311,7 @@
             "support": {
                 "issues": "https://gitlab.com/api/v4/projects/18728803/issues"
             },
-            "time": "2021-01-05T12:33:47+00:00"
+            "time": "2021-01-05T14:27:35+00:00"
         }
     ],
     "packages-dev": [],
