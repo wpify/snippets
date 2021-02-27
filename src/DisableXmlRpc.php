@@ -2,7 +2,7 @@
 
 namespace Wpify\Tools;
 
-use Wpify\Core_4_0\Abstracts\AbstractComponent;
+use Wpify\Core\Abstracts\AbstractComponent;
 
 class DisableXmlRpc extends AbstractComponent
 {

@@ -3,7 +3,7 @@
 namespace Wpify\Tools;
 
 use PHPMailer;
-use Wpify\Core_4_0\Abstracts\AbstractComponent;
+use Wpify\Core\Abstracts\AbstractComponent;
 
 class CustomSMTP extends AbstractComponent
 {
