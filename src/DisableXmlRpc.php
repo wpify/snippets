@@ -1,13 +1,9 @@
 <?php
 
-namespace Wpify\Tools;
+namespace Wpify\Snippets;
 
-use Wpify\Core\Abstracts\AbstractComponent;
-
-class DisableXmlRpc extends AbstractComponent
-{
-  public function setup()
-  {
-    add_filter('xmlrpc_enabled', '__return_false');
+class DisableXmlRpc {
+  public function __construct() {
+    add_filter( 'xmlrpc_enabled', '__return_false' );
   }
 }

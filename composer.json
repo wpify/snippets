@@ -1,10 +1,7 @@
 {
-  "name": "wpify/tools",
+  "name": "wpify/snippets",
   "type": "library",
-  "require": {
-    "wpify/core": "^4.2"
-  },
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Daniel Mejta",
@@ -17,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Wpify\\Tools\\": "src/"
+      "Wpify\\Snippets\\": "src/"
     }
   }
 }

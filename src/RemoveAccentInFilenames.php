@@ -1,19 +1,15 @@
 <?php
 
-namespace Wpify\Tools;
+namespace Wpify\Snippets;
 
-use Wpify\Core\Abstracts\AbstractComponent;
-
-class RemoveAccentInFilenames extends AbstractComponent
-{
-  public function setup()
-  {
-    add_filter('sanitize_file_name', [$this, 'sanitize_file_name']);
+class RemoveAccentInFilenames {
+  public function __construct() {
+    add_filter( 'sanitize_file_name', array( $this, 'sanitize_file_name' ) );
   }
 
-  public function sanitize_file_name($filename)
-  {
-    $dotp = strrpos($filename, '.');
-    return sanitize_title(substr($filename, 0, $dotp)) . '.' . sanitize_title(substr($filename, $dotp + 1));
+  public function sanitize_file_name( $filename ) {
+    $dotp = strrpos( $filename, '.' );
+
+    return sanitize_title( substr( $filename, 0, $dotp ) ) . '.' . sanitize_title( substr( $filename, $dotp + 1 ) );
   }
 }

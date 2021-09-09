@@ -1,18 +1,13 @@
 <?php
 
-namespace Wpify\Tools;
+namespace Wpify\Snippets;
 
-use Wpify\Core\Abstracts\AbstractComponent;
-
-class CopyrightShortcode extends AbstractComponent
-{
-  public function setup()
-  {
-    add_shortcode('copyright', [$this, 'render']);
+class CopyrightShortcode {
+  public function __construct() {
+    add_shortcode( 'copyright', [ $this, 'render' ] );
   }
 
-  public function render($atts, $content = '')
-  {
-    return '&copy;&nbsp;' . date('Y') . '&nbsp;' . $content;
+  public function render( $atts, $content = '' ) {
+    return '&copy;&nbsp;' . date( 'Y' ) . '&nbsp;' . $content;
   }
 }
