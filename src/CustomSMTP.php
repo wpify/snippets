@@ -2,7 +2,7 @@
 
 namespace Wpify\Snippets;
 
-use PHPMailer;
+use PHPMailer\PHPMailer\PHPMailer;
 
 class CustomSMTP {
   public function __construct() {
