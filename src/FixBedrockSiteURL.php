@@ -13,7 +13,7 @@ class FixBedrockSiteURL {
 	public function __construct() {
 		add_filter( 'option_home', array( $this, 'fix_home_url' ) );
 		add_filter( 'option_siteurl', array( $this, 'fix_site_url' ) );
-		add_filter( 'network_site_url', array( $this, 'fix_network_site_url' ) );
+		add_filter( 'network_site_url', array( $this, 'fix_network_site_url' ), 10, 3 );
 	}
 
 	/**
