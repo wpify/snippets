@@ -71,6 +71,9 @@ class SMTP {
 		if ( $this->from ) {
 			$phpmailer->From = $this->from;
 		}
+
+		$phpmailer->Sender =   $phpmailer->From;
+		
 		if ( $this->from_name ) {
 			$phpmailer->FromName = $this->from_name;
 		}
