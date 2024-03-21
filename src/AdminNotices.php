@@ -77,6 +77,8 @@ class AdminNotices {
 	 * The method for displaying the admin notices.
 	 *
 	 * It displays the admin notices that have not been dismissed by the current user.
+	 *
+	 * @internal
 	 */
 	public function admin_notices( bool $network = false ): void {
 		foreach ( $this->get_notices( $network ) as $id => $notice ) {
@@ -90,9 +92,30 @@ class AdminNotices {
 	 * The method for displaying the network admin notices.
 	 *
 	 * It displays the network admin notices that have not been dismissed by the current user.
+	 *
+	 * @internal
 	 */
 	public function network_admin_notices(): void {
 		$this->admin_notices( true );
+	}
+
+	/**
+	 * The method for dismissing an admin notice.
+	 *
+	 * @internal
+	 */
+	public function dismiss_notice(): void {
+		if ( ! wp_verify_nonce( filter_input( INPUT_GET, 'nonce', FILTER_SANITIZE_SPECIAL_CHARS ), self::DISMISS_AJAX_ACTION ) ) {
+			wp_send_json_error( array( 'message' => 'Invalid nonce' ) );
+
+			return;
+		}
+
+		$id                   = filter_input( INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS );
+		$dismissed_messages   = $this->get_dismissed_messages_by_notice_id( $id );
+		$dismissed_messages[] = filter_input( INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS );
+
+		$this->set_dismissed_message( $id, $dismissed_messages );
 	}
 
 	/**
@@ -100,7 +123,7 @@ class AdminNotices {
 	 *
 	 * It renders the admin notice and enqueues the script for dismissing the admin notice.
 	 */
-	public function render_notice( array $notice ): void {
+	private function render_notice( array $notice ): void {
 		$paragraph_wrap       = true;
 		$id                   = $notice['id'];
 		$type                 = $notice['type'];
@@ -159,7 +182,7 @@ class AdminNotices {
 	 *
 	 * It renders the script for dismissing the admin notice.
 	 */
-	public function render_dismiss_script(): void {
+	private function render_dismiss_script(): void {
 		$ajax_url    = esc_js( admin_url( 'admin-ajax.php' ) );
 		$ajax_action = esc_js( self::DISMISS_AJAX_ACTION );
 		$nonce       = esc_js( wp_create_nonce( self::DISMISS_AJAX_ACTION ) );
@@ -268,23 +291,6 @@ class AdminNotices {
 		}
 
 		return $notices;
-	}
-
-	/**
-	 * The method for dismissing an admin notice.
-	 */
-	public function dismiss_notice(): void {
-		if ( ! wp_verify_nonce( filter_input( INPUT_GET, 'nonce', FILTER_SANITIZE_SPECIAL_CHARS ), self::DISMISS_AJAX_ACTION ) ) {
-			wp_send_json_error( array( 'message' => 'Invalid nonce' ) );
-
-			return;
-		}
-
-		$id                   = filter_input( INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS );
-		$dismissed_messages   = $this->get_dismissed_messages_by_notice_id( $id );
-		$dismissed_messages[] = filter_input( INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS );
-
-		$this->set_dismissed_message( $id, $dismissed_messages );
 	}
 
 	/**
