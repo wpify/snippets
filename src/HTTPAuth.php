@@ -7,6 +7,9 @@ class HTTPAuth {
 		private string $username = '',
 		private string $password = ''
 	) {
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
+			return;
+		}
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
 		add_action( 'init', array( $this, 'http_basic_auth' ) );
