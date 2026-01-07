@@ -8,8 +8,11 @@ class RemoveAccentInFilenames {
   }
 
   public function sanitize_file_name( $filename ) {
-    $dotp = strrpos( $filename, '.' );
+	  $parts = explode( '.', $filename );
+	  foreach ( $parts as $key => $part ) {
+		  $parts[ $key ] = sanitize_title( $part );
+	  }
 
-    return sanitize_title( substr( $filename, 0, $dotp ) ) . '.' . sanitize_title( substr( $filename, $dotp + 1 ) );
+	  return implode( '.', $parts );
   }
 }
